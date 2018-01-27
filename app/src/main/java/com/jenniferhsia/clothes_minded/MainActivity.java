@@ -24,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void navigateToStats(View v) {
+        Intent intent = new Intent(MainActivity.this, Statistics.class);
+        startActivity(intent);
+    }
+
 
 }

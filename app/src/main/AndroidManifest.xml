@@ -18,9 +18,7 @@
         </activity>
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".Closet"
-            android:label="@string/title_activity_closet"></activity>
+        <activity android:name=".Statistics"></activity>
     </application>
 
 </manifest>
