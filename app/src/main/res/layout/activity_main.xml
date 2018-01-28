@@ -50,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Login Button -->
+    <!--  Login Button -->
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btn_login"
         android:layout_width="202dp"
