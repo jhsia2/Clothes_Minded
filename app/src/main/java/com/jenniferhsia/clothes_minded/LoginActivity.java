@@ -102,7 +102,9 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
-        finish();
+        Intent intent = new Intent(this, ItemListActivity.class);
+        startActivity(intent);
+        //finish();
     }
 
     public void onLoginFailed() {
@@ -133,4 +135,14 @@ public class LoginActivity extends AppCompatActivity {
 
         return valid;
     }
+/*
+    public void navigateToItemList(View v) {
+        if (validate()) {
+            Intent intent = new Intent(this, ItemListActivity.class);
+            startActivity(intent);
+        }
+        else {
+            Toast.makeText(this, "Incorrect Login", Toast.LENGTH_SHORT).show();
+        }
+    } */
 }
