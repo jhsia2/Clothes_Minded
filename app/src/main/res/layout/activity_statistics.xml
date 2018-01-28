@@ -5,15 +5,52 @@
     android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.jenniferhsia.clothes_minded.Statistics">
 
     <TextView
-        android:id="@+id/statsTextView"
+        android:id="@+id/statsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="stats!"
+        android:text="My Statistics"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="30.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <TextView
+        android:id="@+id/statsTextBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biodegradable"
+        android:textSize="30sp"
+        android:textColor="#4CC417"
+        app:layout_constraintHorizontal_bias="30.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statsText" />
+
+    <TextView
+        android:id="@+id/statsTextNonBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non-Biodegradable"
+        android:textSize="30sp"
+        android:textColor="#FF0000"
+        app:layout_constraintHorizontal_bias="30.0"
+        app:layout_constraintTop_toBottomOf="@+id/statsTextBio" />
+
+    <TextView
+        android:id="@+id/statsTextUnknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unknown"
+        android:textSize="30sp"
+        android:textColor="#6698FF"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="30.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </LinearLayout>

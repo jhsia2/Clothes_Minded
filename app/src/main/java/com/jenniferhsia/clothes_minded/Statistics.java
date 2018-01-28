@@ -20,18 +20,18 @@ public class Statistics extends AppCompatActivity {
     }
 
     private float[] calculateData() {
-        double unknowns = 20*Math.random();
-        double nonbiodegradables = 33*Math.random();
-        double biodegradables = 100 - unknowns - nonbiodegradables;
-        float[] numbers = {(float)unknowns, (float)nonbiodegradables, (float)biodegradables};
+        double unknowns = 360/100*33*Math.random();
+        double nonbiodegradables = 360/100*33*Math.random();
+        double biodegradables = 360 - unknowns - nonbiodegradables;
+        float[] numbers = {(float)biodegradables, (float)nonbiodegradables, (float)unknowns};
         return numbers;
     }
 
     public class MyGraphview extends View {
         private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         private float[] value_degree;
-        private int[] COLORS = {Color.BLUE, Color.GREEN, Color.GRAY, Color.CYAN, Color.RED};
-        RectF rectf = new RectF(10, 10, 200, 200);
+        private int[] COLORS = {Color.GREEN, Color.RED, Color.BLUE};
+        RectF rectf = new RectF(50, 60, 820, 800);
         int temp = 0;
 
         public MyGraphview(Context context, float[] values) {
